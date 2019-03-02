@@ -1,7 +1,255 @@
 ul {
-  list-style: none;
+	list-style: none;
+	padding: 0;
 }
 
-li {
-  font-family: icomoon;
+html {
+	background-image: url(../img/1_qRDw-XlEpumtlB5pQS1FnA.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	clear: both;
+	content: '.';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.wrapper {
+	width: 860px;
+	margin: 200px auto;
+}
+
+.leftSide {
+	width: 180px;
+	float: left;
+}
+
+.leftSide .picFrame {
+	/* border: 2px solid #999; */
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+@keyframes swing {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.leftSide .picFrame:hover {
+	animation: swing 0.2s ease-out;
+}
+
+.leftSide img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.leftSide p {
+	text-align: center;
+	margin: 0;
+	/* padding: 8px 0; */
+	background-color: #c75454;
+}
+
+.leftSide p.MyName {
+	font-weight: 600;
+	padding-top: 4px;
+}
+
+.leftSide p.title {
+	font-size: 14px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+}
+
+.leftSide ul {
+	margin: 0;
+	padding: 4px 0;
+}
+
+.leftSide nav li {
+	font-size: 18px;
+	margin: 4px 0;
+	padding-left: 10px;
+	border-radius: 6px;
+	background-color: #eeeeee;
+	height: 30px;
+	line-height: 30px;
+	transition: all 0.5s ease;
+}
+
+.leftSide nav li:hover {
+	transform: translateX(15px);
+}
+
+.leftSide li a {
+	margin-left: 12px;
+}
+
+.leftSide li span {
+	vertical-align: middle;
+	border-radius: 0 6px 6px 0;
+	width: 10px;
+	height: 100%;
+	background-color: #ddd;
+	float: right;
+}
+
+.leftSide li span.active {
+	background-color: #c75454;
+}
+
+.rightSide {
+	border-radius: 8px;
+	border-right: 4px solid #eeeeee;
+	border-top: 4px solid #eeeeee;
+	float: right;
+	width: 660px;
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+	height: 380px;
+}
+
+.rightSide .jslogo {
+	width: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.rightSide .sectionName {
+	font-size: 22px;
+	color: #c75454;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.rightSide .info {
+	margin: 0 30px;
+	transition: all 0.6s linear;
+}
+
+.rightSide .contactInfo {
+	margin: 0 30px;
+}
+
+.rightSide .basicInfo ul {
+	padding: 0;
+}
+
+.rightSide .basicInfo li {
+	font-size: 18px;
+	margin: 4px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.aboutMe ul .mark {
+	width: 4px;
+	height: 18px;
+	float: left;
+	background-color: #888;
+	margin: 0 6px;
+}
+
+.aboutMe .bio {
+	text-indent: 24px;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.skillSet {
+	padding-left: 20px;
+}
+
+.skillSet ul {
+	float: left;
+	margin-top: 0;
+}
+
+.skillSet li {
+	line-height: 24px;
+	margin: 8px 0;
+}
+
+.skillSet ul.skillNames {
+	width: 100px;
+}
+
+.skillSet .skillName {
+	float: right;
+	border: 2px solid #eee;
+	border-radius: 2px;
+	font-size: 18px;
+}
+
+.skillSet ul.ranges {
+	width: 250px;
+}
+
+.skillSet .range {
+	float: left;
+	height: 20px;
+	border-radius: 4px;
+}
+
+.skillSet .ranges li {
+	padding-left: 10px;
+	height: 28px;
+}
+
+.r1 {
+	width: 50px;
+}
+
+.r2 {
+	width: 100px;
+}
+
+.r3 {
+	width: 150px;
+}
+
+.r4 {
+	width: 200px;
+}
+
+.r5 {
+	width: 250px;
+}
+
+.eachBlock {
+	margin-top: 40px;
+}
+
+.date {
+	font-size: 12px;
+	color: #666;
+}
+
+.event {
+	margin-left: 14px;
+}
+
+.summary {
+	color: #585858;
+	text-indent: 18px;
+	line-height: 1.4;
 }
