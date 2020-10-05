@@ -1,255 +1,263 @@
 ul {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 html {
-	background-image: url(../img/1_qRDw-XlEpumtlB5pQS1FnA.jpeg);
-	background-attachment: fixed;
-	background-size: cover;
+    background-image: url(../img/1_qRDw-XlEpumtlB5pQS1FnA.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
-	text-decoration: none;
-}
-
-.clearfix::after {
-	clear: both;
-	content: '.';
-	display: block;
-	width: 0;
-	height: 0;
-	visibility: hidden;
+    text-decoration: none;
 }
 
 .wrapper {
-	width: 860px;
-	margin: 200px auto;
+    width: 860px;
+    margin: 70px auto;
 }
 
 .leftSide {
-	width: 180px;
-	float: left;
+    width: 180px;
+    float: left;
 }
 
 .leftSide .picFrame {
-	/* border: 2px solid #999; */
-	border-radius: 8px;
-	overflow: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes swing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes swing {
-	0% {
-		transform: scale(1);
-	}
+    0% {
+        transform: scale(1);
+    }
 
-	50% {
-		transform: scale(1.1);
-	}
+    50% {
+        transform: scale(1.1);
+    }
 
-	100% {
-		transform: scale(1);
-	}
+    100% {
+        transform: scale(1);
+    }
 }
 
 .leftSide .picFrame:hover {
-	animation: swing 0.2s ease-out;
+    -webkit-animation: swing 0.2s ease-out;
+    animation: swing 0.2s ease-out;
 }
 
 .leftSide img {
-	width: 100%;
-	vertical-align: middle;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .leftSide p {
-	text-align: center;
-	margin: 0;
-	/* padding: 8px 0; */
-	background-color: #c75454;
+    text-align: center;
+    margin: 0;
+    background-color: #c75454;
 }
 
 .leftSide p.MyName {
-	font-weight: 600;
-	padding-top: 4px;
+    font-weight: 600;
+    padding-top: 4px;
 }
 
 .leftSide p.title {
-	font-size: 14px;
-	padding-top: 2px;
-	padding-bottom: 4px;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 4px;
 }
 
 .leftSide ul {
-	margin: 0;
-	padding: 4px 0;
+    margin: 0;
+    padding: 4px 0;
 }
 
 .leftSide nav li {
-	font-size: 18px;
-	margin: 4px 0;
-	padding-left: 10px;
-	border-radius: 6px;
-	background-color: #eeeeee;
-	height: 30px;
-	line-height: 30px;
-	transition: all 0.5s ease;
+    font-size: 18px;
+    margin: 4px 0;
+    padding-left: 10px;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease;
 }
 
 .leftSide nav li:hover {
-	transform: translateX(15px);
+    transform: translateX(15px);
 }
 
 .leftSide li a {
-	margin-left: 12px;
+    margin-left: 12px;
 }
 
-.leftSide li span {
-	vertical-align: middle;
-	border-radius: 0 6px 6px 0;
-	width: 10px;
-	height: 100%;
-	background-color: #ddd;
-	float: right;
+.leftSide li span.right {
+    vertical-align: middle;
+    border-radius: 0 6px 6px 0;
+    width: 10px;
+    height: 100%;
+    background-color: #ddd;
+    float: right;
 }
 
 .leftSide li span.active {
-	background-color: #c75454;
+    background-color: #c75454;
 }
 
 .rightSide {
-	border-radius: 8px;
-	border-right: 4px solid #eeeeee;
-	border-top: 4px solid #eeeeee;
-	float: right;
-	width: 660px;
-	position: relative;
-	background-color: white;
-	overflow: hidden;
-	height: 380px;
+    position: relative;
+    float: right;
+    height: 500px;
+    width: 660px;
+    overflow: hidden;
+    border-radius: 8px;
+    border-right: 4px solid #eeeeee;
+    border-top: 4px solid #eeeeee;
+    background-color: white;
 }
 
 .rightSide .jslogo {
-	width: 50px;
-	position: absolute;
-	top: 0;
-	right: 0;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .rightSide .sectionName {
-	font-size: 22px;
-	color: #c75454;
-	font-weight: 600;
-	margin-top: 0;
+    font-size: 22px;
+    color: #c75454;
+    font-weight: 600;
+    margin-top: 0;
 }
 
 .rightSide .info {
-	margin: 0 30px;
-	transition: all 0.6s linear;
+    padding: 0 30px;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
 }
 
 .rightSide .contactInfo {
-	margin: 0 30px;
+    margin: 0 30px;
 }
 
 .rightSide .basicInfo ul {
-	padding: 0;
+    padding: 0;
+}
+
+.rightSide .basicInfo,
+.rightSide .skillSet {
+    margin-left: 20px;
+
 }
 
 .rightSide .basicInfo li {
-	font-size: 18px;
-	margin: 4px;
-	border-bottom: 1px solid #eeeeee;
+    font-size: 18px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .aboutMe ul .mark {
-	width: 4px;
-	height: 18px;
-	float: left;
-	background-color: #888;
-	margin: 0 6px;
+    width: 4px;
+    height: 18px;
+    float: left;
+    background-color: #888;
+    margin-right: 6px;
 }
 
 .aboutMe .bio {
-	text-indent: 24px;
-	font-size: 18px;
-	line-height: 1.4;
-}
-
-.skillSet {
-	padding-left: 20px;
+    text-indent: 24px;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 .skillSet ul {
-	float: left;
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .skillSet li {
-	line-height: 24px;
-	margin: 8px 0;
-}
-
-.skillSet ul.skillNames {
-	width: 100px;
+    padding: 6px 0;
 }
 
 .skillSet .skillName {
-	float: right;
-	border: 2px solid #eee;
-	border-radius: 2px;
-	font-size: 18px;
-}
-
-.skillSet ul.ranges {
-	width: 250px;
+    display: inline-block;
+    width: 100px;
 }
 
 .skillSet .range {
-	float: left;
-	height: 20px;
-	border-radius: 4px;
+    display: inline-block;
+    height: 10px;
+    background-color: #54c7c7;
+    border-radius: 4px;
 }
 
 .skillSet .ranges li {
-	padding-left: 10px;
-	height: 28px;
+    padding-left: 10px;
 }
 
 .r1 {
-	width: 50px;
+    width: 50px;
 }
 
 .r2 {
-	width: 100px;
+    width: 100px;
 }
 
 .r3 {
-	width: 150px;
+    width: 150px;
 }
 
 .r4 {
-	width: 200px;
+    width: 200px;
 }
 
 .r5 {
-	width: 250px;
+    width: 250px;
+}
+
+.range-full {
+    background-color: #c75454;
+    height: 12px;
+    width: 250px;
+    border-radius: 4px;
+    line-height: 12px;
+    display: inline-block;
 }
 
 .eachBlock {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .date {
-	font-size: 12px;
-	color: #666;
+    font-size: 12px;
+    color: #666;
 }
 
 .event {
-	margin-left: 14px;
+    margin-left: 14px;
 }
 
 .summary {
-	color: #585858;
-	text-indent: 18px;
-	line-height: 1.4;
+    color: #585858;
+    text-indent: 18px;
+    line-height: 1.4;
 }

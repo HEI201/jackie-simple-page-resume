@@ -1,18 +1,20 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xb1olc');
-  src:  url('fonts/icomoon.eot?xb1olc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xb1olc') format('truetype'),
-    url('fonts/icomoon.woff?xb1olc') format('woff'),
-    url('fonts/icomoon.svg?xb1olc#icomoon') format('svg');
+  src: url('fonts/icomoon.eot?wmrpby');
+  src: url('fonts/icomoon.eot?wmrpby#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wmrpby') format('truetype'),
+    url('fonts/icomoon.woff?wmrpby') format('woff'),
+    url('fonts/icomoon.svg?wmrpby#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,16 +26,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-vue-dot-js:before {
+.icon-angular:before {
   content: "\e900";
-  color: #4fc08d;
+  color: #dd0031;
 }
+
+.icon-vue-dot-js:before {
+  content: "\e901";
+  color: aquamarine;
+}
+
 .icon-envelop:before {
   content: "\e945";
+  color: bisque;
 }
+
 .icon-bubble:before {
   content: "\e96b";
 }
+
 .icon-user-tie:before {
   content: "\e976";
+  color: rgb(22, 22, 22);
 }
